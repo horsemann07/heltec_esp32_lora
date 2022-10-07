@@ -1,0 +1,9 @@
+# Name,   Type, SubType, Offset,  Size, Flags
+# Note: if you change the phy_init or app partition offset, make sure to change>,,,,
+nvs,      data, nvs,     0x10000,  0x6000,
+otadata,  data, ota,     0x16000,  0x2000,
+phy_init, data, phy,     0x18000,  0x1000,
+factory,0,    factory,   0x20000,     1200K,
+ota_0,0,    ota_0,   ,         1200K,
+file,  data,spiffs,     ,0x6000,
+storage,  data, nvs,     ,         0x10000,
